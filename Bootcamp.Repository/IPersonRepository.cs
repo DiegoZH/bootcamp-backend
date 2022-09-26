@@ -10,5 +10,7 @@ namespace Bootcamp.Repository
     public interface IPersonRepository
     {
         Task<int> Create(Person person);
+        Task<int> Update(Person person);
+        Task<int> Delete(Person person);
     }
 }

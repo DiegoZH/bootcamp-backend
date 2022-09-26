@@ -1,4 +1,5 @@
 using Bootcamp.Queries.DocumentType;
+using Bootcamp.Queries.PersonRead;
 using Bootcamp.Repository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -27,7 +28,8 @@ builder.Services.Configure<ApiBehaviorOptions>(options =>
 
 builder.Services.AddTransient<IDocumentTypeQueries, DocumentTypeQueries>();
 builder.Services.AddTransient<IPersonRepository, PersonRepository>();
-    
+builder.Services.AddTransient<IPersonQueries, PersonQueries>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

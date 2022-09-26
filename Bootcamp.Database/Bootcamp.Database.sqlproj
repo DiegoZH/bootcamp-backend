@@ -67,5 +67,6 @@
     <Build Include="dbo\Tables\DocumentType.sql" />
     <Build Include="dbo\Stored Procedures\Usp_Sel_DocumentType.sql" />
     <Build Include="dbo\Stored Procedures\Usp_Ins_Person.sql" />
+    <Build Include="dbo\Stored Procedures\Usp_Sel_Read.sql" />
   </ItemGroup>
 </Project>
